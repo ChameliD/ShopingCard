@@ -21,24 +21,26 @@ const App=( )=> {
       objectID: 1,
     },
   ];
-    
- 
 
-  const List=props =>
-  props.list.map(item=>(
-    <div key={item.objectID}>
-      <span><a href={item.url}>{item.title}</a></span>
-      <span>{item.author}</span>
-      <span>{item.num_comments}</span>
-      <span>{item.points}</span>
-    </div>
+  const handleSearch=event=>{
+    console.log(event.target.value)
+  }
+  return (
+    <div>
+      <h1>My Hacker Stories</h1>
+      
+      <Search onsearch={handleSearch}/>
+      <hr/>
+     <List list={stories}/>
+     </div>
   )
-    )
-  const Search=()=>{
+}
+  const Search=props=>{
     const [searchTerm,setSearchTerm]=React.useState('');
   
     const handleChange=event=>{
       setSearchTerm(event.target.value)
+      props.onsearch(event)
      }
      return(
        <div>
@@ -49,14 +51,16 @@ const App=( )=> {
        </div>
      )
   }
-  return (
-    <div>
-      <h1>My Hacker Stories</h1>
-      
-      <Search/>
-      <hr/>
-     <List list={stories}/>
-     </div>
+  const List=props =>
+  props.list.map(item=>(
+    <div key={item.objectID}>
+      <span><a href={item.url}>{item.title}</a></span>
+      <span>{item.author}</span>
+      <span>{item.num_comments}</span>
+      <span>{item.points}</span>
+    </div>
   )
-};
+    )
+
+
 export default App
