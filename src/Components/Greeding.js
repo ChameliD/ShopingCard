@@ -1,13 +1,6 @@
 
-import React, { Component } from 'react'
+import React from 'react'
 
-export class Greeding extends Component {
-
-  render() {
-    return (
-      <div>Greeding</div>
-    )
-  }
-}
+const Greeding=()=><h1>Hello</h1>
 
 export default Greeding
