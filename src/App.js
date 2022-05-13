@@ -7,7 +7,9 @@ import Welcome from './Components/Welcome';
 function App() {
   return (
     <div className="App">
-      <Greeding name="Chameli" num='1'/>
+      <Greeding name="Chameli" num='1'>
+        <p>This is children props</p>
+      </Greeding>
       <Greeding name="Pubudu" num='2'/>
       <Greeding name="Ashini" num='3'/>
       <Welcome/>
