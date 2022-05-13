@@ -2,6 +2,8 @@
 
 import React from 'react'
 
-const Greeding=()=><h1>Hello</h1>
+const Greeding=(props)=>
+  <h1>Hello {props.name}, Your index number is {props.num}</h1>
+
 
 export default Greeding
