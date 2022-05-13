@@ -1,3 +1,4 @@
+// here it is a functional component
 
 import React from 'react'
 
