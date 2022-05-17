@@ -1,4 +1,5 @@
-//rfce
+//rfce for function components
+
 import React from 'react'
 
 function FunctionClick() {

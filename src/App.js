@@ -1,5 +1,6 @@
 
 import './App.css';
+import ClassClick from './Components/ClassClick';
 import Counter from './Components/Counter';
 import FunctionClick from './Components/FunctionClick';
 import Greeding from './Components/Greeding';
@@ -13,6 +14,7 @@ function App() {
       
       
       <FunctionClick/>
+      <ClassClick/>
       
      {/*
      <Counter/>
