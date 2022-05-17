@@ -2,6 +2,7 @@
 import './App.css';
 import ClassClick from './Components/ClassClick';
 import Counter from './Components/Counter';
+import EventBind from './Components/EventBind';
 import FunctionClick from './Components/FunctionClick';
 import Greeding from './Components/Greeding';
 import Hello from './Components/Hello';
@@ -11,12 +12,13 @@ import Welcome from './Components/Welcome';
 function App() {
   return (
     <div className="App">
+      <EventBind/>
       
-      
+     {/*
+     
       <FunctionClick/>
       <ClassClick/>
       
-     {/*
      <Counter/>
      <Message/>
      <Greeding name="Chameli" num='1'>
