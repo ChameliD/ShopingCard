@@ -7,12 +7,13 @@ import FunctionClick from './Components/FunctionClick';
 import Greeding from './Components/Greeding';
 import Hello from './Components/Hello';
 import Message from './Components/Message';
+import PostList from './Components/PostList';
 import Welcome from './Components/Welcome';
 
 function App() {
   return (
     <div className="App">
-      
+      <PostList/>
       
      {/*
      <EventBind/>
