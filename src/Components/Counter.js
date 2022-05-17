@@ -16,10 +16,33 @@ export class Counter extends Component {
     //never modify th state directly
     //need to use setstate
     increment(){
-        this.setState({
+        /*this.setState({
             count:this.state.count+1
+        },//second parameter in the setState method
+        ()=>{
+            console.log('Callback value',this.state.count) //callback log
         })
+*/
+        /*this.setState(prevState=>({
+            count:prevState.count+1
+        }))*/
+
+        this.setState((prevState,props)=>({
+            count:prevState.count+1
+        }))
+
+        console.log(this.state.count) //synchronous log
     }
+    incremenFive(){
+       
+       /* this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()*/
+    }
+
+
   render() {
     return (
       <div>
