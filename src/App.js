@@ -12,10 +12,10 @@ import Welcome from './Components/Welcome';
 function App() {
   return (
     <div className="App">
-      <EventBind/>
+      
       
      {/*
-     
+     <EventBind/>
       <FunctionClick/>
       <ClassClick/>
       
