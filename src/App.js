@@ -1,5 +1,6 @@
 
 import './App.css';
+import Counter from './Components/Counter';
 import Greeding from './Components/Greeding';
 import Hello from './Components/Hello';
 import Message from './Components/Message';
@@ -8,9 +9,12 @@ import Welcome from './Components/Welcome';
 function App() {
   return (
     <div className="App">
-      <Message/>
       
-     {/* <Greeding name="Chameli" num='1'>
+      <Counter/>
+      
+     {/* 
+     <Message/>
+     <Greeding name="Chameli" num='1'>
         <p>This is children props</p>
       </Greeding>
       <Greeding name="Pubudu" num='2'>

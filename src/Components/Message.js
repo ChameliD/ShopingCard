@@ -1,6 +1,7 @@
 // here it is a class component
 
 import React,{Component} from "react";
+import Counter from "./Counter";
 
 class Message extends Component{
     constructor(){
@@ -20,6 +21,7 @@ class Message extends Component{
             <div>
                 <h1>{this.state.message}</h1>
                 <button onClick={()=>this.changeMessag()}>Subcribe</button> 
+                
                 
             </div>)
     }
