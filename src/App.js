@@ -10,14 +10,16 @@ import Message from './Components/Message';
 import ParentComponent from './Components/ParentComponent';
 import PostForm from './Components/PostForm';
 import PostList from './Components/PostList';
+import UserGreeting from './Components/UserGreeting';
 import Welcome from './Components/Welcome';
 
 function App() {
   return (
     <div className="App">
-      <ParentComponent/>
       
+      <UserGreeting/>
      {/*
+     <ParentComponent/>
      <PostForm></PostForm>
      <PostList/>
      <EventBind/>
