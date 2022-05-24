@@ -5,10 +5,11 @@ class UserGreeting extends Component {
       super(props)
     
       this.state = {
-         isLoggIn:false
+         isLoggIn:true
       }
     }
   render() {
+    return this.state.isLoggIn&&<div>Welcome Chameli</div>
       //If else are note work inside the JSX
       //Hove to use rendera method
 
@@ -38,18 +39,18 @@ class UserGreeting extends Component {
           )
 
      ***************************************************
-      }*/
+      }
     return this.state.isLoggIn ?(
-    /*************Approach 3-if else********************/ 
-      <div>
-          {/*message  from Approach 1*/}
+    /*************Approach 3-if else********************/
+    /*  <div>
+          /*message  from Approach 1
           Welcome Chameli
         </div>):(
         <div>
             Welcome Guest
         </div>
-        )
-   
+        )*/
+        
   }
 }
 
