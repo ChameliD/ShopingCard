@@ -1,4 +1,5 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import ClassClick from './Components/ClassClick';
 import Counter from './Components/Counter';
@@ -13,13 +14,13 @@ import PostForm from './Components/PostForm';
 import PostList from './Components/PostList';
 import UserGreeting from './Components/UserGreeting';
 import Welcome from './Components/Welcome';
-
+import Folder1 from './Components/Folder1';
+import Folder2 from './Components/Folder2';
+import Render from './Components/Render';
 function App() {
   return (
-    <div className="App">
-      
-      
-     {/*
+    <div> 
+    {/*
      <NameList/>
      <UserGreeting/>
      <ParentComponent/>
@@ -44,7 +45,18 @@ function App() {
       <Welcome name="Kumarihami" num='20'></Welcome>
       <Welcome name="Gunasekara" num='30'></Welcome>
   <Hello/>*/}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Render />} >
+        <Route path="/f1" element={<Folder1 />} />
+        <Route path="/f2" element={<Folder2 />} />
+        
+          
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    
+    </div> 
   );
 }
 
