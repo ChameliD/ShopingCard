@@ -7,6 +7,7 @@ import FunctionClick from './Components/FunctionClick';
 import Greeding from './Components/Greeding';
 import Hello from './Components/Hello';
 import Message from './Components/Message';
+import NameList from './Components/NameList';
 import ParentComponent from './Components/ParentComponent';
 import PostForm from './Components/PostForm';
 import PostList from './Components/PostList';
@@ -17,8 +18,10 @@ function App() {
   return (
     <div className="App">
       
-      <UserGreeting/>
+      
      {/*
+     <NameList/>
+     <UserGreeting/>
      <ParentComponent/>
      <PostForm></PostForm>
      <PostList/>
